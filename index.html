@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindscape</title>
+  <link rel="icon" href="images/favicon-32x32.webp">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-deepPurple text-white font-primary md:pb-10">
+
+<!-- nav -->
+<nav class="nav-border relative container mx-auto p-5">
+  <!-- border-b-2 -->
+  <div class="flex items-center justify-between">
+    <!-- logo -->
+    <div class="p-2">
+      <a href="index.html"><img src="images/logo.png" alt=""></a>
+    </div>
+
+    <!-- menu items -->
+    <div class="hidden text-2xl space-x-5 md:flex lg:text-3xl 2xl:text-4xl">
+      <a href="index.html" class="nav-hover">Home</a>
+      <a href="about.html" class="nav-hover">About</a>
+      <a href="subjects.html" class="nav-hover">Subjects</a>
+    </div>
+
+    <!-- button -->
+    <a href="contact.html" class="contact-btn hidden text-2xl border-2 rounded-full px-5 py-2 hover:text-deepPurple hover:bg-white md:block lg:text-3xl 2xl:text-4xl">Contact</a>
+
+
+    <!-- mobile menu button -->
+    <button class="block p-2 md:hidden">
+      <img src="images/menu-icon.png" alt="" id="menu-btn" class="">
+    </button>
+  </div>
+
+  <!-- mobile menu -->
+  <div class="md:hidden">
+    <div id="menu" class="absolute inset-x-0 flex-col items-center hidden py-8 mt-5 space-y-10 text-3xl text-deepPurple bg-white w-full">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="subjects.html">Subjects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- hero -->
+<section>
+  <div class="container mx-auto px-7">
+    <div class="text-4xl text-left pt-10 pb-10 md:text-center md:text-5xl 2xl:text-6xl">
+      <h1>Unlocking Minds, Igniting Learning</h1>
+    </div>
+    <div class="text-left text-xl mx-auto md:text-center md:text-2xl md:w-3/4 lg:w-2/3 xl:w-1/2">
+      <p>
+        At Mindscape Tutors, we delve into the depths of learning, exploring the endless possibilities within each mind. Our tutors are passionate about nurturing the individual mindscapes of our students to achieve academic excellence.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- section 2-->
+<section>
+  <div class="container mx-auto flex flex-col text-xl px-7 pt-10 gap-10 md:flex-row">
+    <div>
+      <ul class="pb-5 underline">Our Approach</ul>
+      <li class="pl-3 pb-3 list-none">1. Mindful Learning: Engaging sessions that stimulate curiosity and critical thinking.</li>
+      <li class="pl-3 pb-3 list-none">2. Expansive Knowledge: Exploring subjects beyond textbooks to expand mental horizons.</li>
+      <li class="pl-3 pb-3 list-none">3. Creative Connections: Connecting lessons to real-world scenarios for deeper understanding.</li>
+    </div>
+    <div>
+      <ul class="pb-5 underline">Our Approach</ul>
+      <li class="pl-3 pb-3 list-none">1. Mindful Learning: Engaging sessions that stimulate curiosity and critical thinking.</li>
+      <li class="pl-3 pb-3 list-none">2. Expansive Knowledge: Exploring subjects beyond textbooks to expand mental horizons.</li>
+      <li class="pl-3 pb-3 list-none">3. Creative Connections: Connecting lessons to real-world scenarios for deeper understanding.</li>
+    </div>
+  </div>
+</section>
+
+<div class="bg-black px-3 mt-10 rounded-s-sm fixed bottom-0 right-0">
+  <p class="text-xs text-white text-center p-2 w-full">
+    Made with ❤️
+  </p>
+</div>
+
+<!-- end -->
+<script src="script.js"></script>
+</body>
+</html>

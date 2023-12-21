@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.contact-btn {
+  transition: background-color 0.3s ease;
+}
+
+.nav-border::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  background-color: white;
+  height: 2px;
+  z-index: -1;
+}
+
+.nav-hover {
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-hover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+.nav-hover:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.menu-open {
+  transform: rotate(90deg);
+}
+
